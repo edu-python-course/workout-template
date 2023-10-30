@@ -4,10 +4,11 @@
 
 ## Checklist
 
-- [ ] Update assignment information in [README](../README.md)
-- [ ] Provide [instructions](../.lesson/instructions.md) for the assignment
-- [ ] Provide boilerplate code in `main.py`
-- [ ] Provide the solution with [.lesson](../.lesson) directory
+- [ ] Update assignment information in **README**
+- [ ] Update project information in **pyproject.toml** file
+- [ ] Provide instructions for the assignment (**instructions.md**)
+- [ ] Provide boilerplate code in **main.py**
+- [ ] Provide the solution with **.lesson** directory
 - [ ] Implement `unittests` for the assignment
-- [ ] Check all tests are failed
-- [ ] Ensure solution code hasn't been committed
+- [ ] Check all tests are failed (mark them as `expectedFailure`)
+- [ ] Ensure solution code hasn't been committed within public files
