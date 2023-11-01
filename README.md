@@ -11,7 +11,7 @@ Assigment overview goes here... TBD
 
 Press the `Use this template` green button at the top.
 
-![](./.lesson/assets/repo-from-template.png)
+![](.lesson/assets/replit/repo-from-template.png)
 
 This will lead you to the repository creation page.
 Provide a valid meaningful repo name and add its description.
@@ -25,7 +25,7 @@ It's important not to work within the default branch. So, ensure noone can
 commit directly into `master`. In **Settings** navigate to **Branches** under
 the **Code and automation** section. Press `Add branch protection rule` button.
 
-![](.lesson/assets/branch-protection-1.png)
+![](.lesson/assets/replit/branch-protection-1.png)
 
 Provide branch name pattern and check following options:
 
@@ -34,9 +34,9 @@ Provide branch name pattern and check following options:
     - **Require branches to be up date before merging**
 - **Do not allow bypassing the above settings**
 
-![](.lesson/assets/branch-protection-2.png)
-![](.lesson/assets/branch-protection-3.png)
-![](.lesson/assets/branch-protection-4.png)
+![](.lesson/assets/replit/branch-protection-2.png)
+![](.lesson/assets/replit/branch-protection-3.png)
+![](.lesson/assets/replit/branch-protection-4.png)
 
 This will protect the default branch from committing directly into it.
 You may apply other protection rules, in case of need.
@@ -101,11 +101,11 @@ a little bit tricky to connect the Replit project with a GitHub repository.
 
 Navigate to EDU organization's team and press `Create project` button.
 
-![](.lesson/assets/replit-create-project-1.png)
+![](.lesson/assets/replit/replit-create-project-1.png)
 
 Provide all the information about the assignment.
 
-![](.lesson/assets/replit-create-project-2.png)
+![](.lesson/assets/replit/replit-create-project-2.png)
 
 There is an [assignments library](https://replit.com/@assignments-library)
 of current course available on Replit. For the assignments within this team,
@@ -117,17 +117,17 @@ it, until it hasn't been clicked. And this may be annoying to see it each time.
 After that open `Git` tab, by pressing the corresponding button inside
 **Tools** section.
 
-![](.lesson/assets/repl-configure-1.png)
+![](.lesson/assets/replit/repl-configure-1.png)
 
 On `Git` tab **uncheck** "Create initial commit with all changes" option.
 The GitHub repo is the only source of any changes for the assignment. After
 that press `Initialize Git Repository`.
 
-![](.lesson/assets/repl-configure-2.png)
+![](.lesson/assets/replit/repl-configure-2.png)
 
 On `Git` tab press `Reset All` button. Approve discard changes actions.
 
-![](.lesson/assets/repl-configure-3.png)
+![](.lesson/assets/replit/repl-configure-3.png)
 
 In the **Tools** section press `Shell` button to access the shell.
 Add remote repository as common. Note, it maybe tricky to use SSH access.
@@ -148,40 +148,40 @@ The repl set up is complete at this point.
 In **Tools** section press `Tests` button and choose a testing method,
 *Unit tests* will be suitable in most cases.
 
-![](.lesson/assets/repl-configure-4.png)
+![](.lesson/assets/replit/repl-configure-4.png)
 
 First you need to set up unit tests. In a setup window add required imports.
 Also, you can provide `setUp` and `tearDown` methods within advanced setup
 section.
 
-![](.lesson/assets/repl-configure-5.png)
+![](.lesson/assets/replit/repl-configure-5.png)
 
 After the `unittest` framework is set up, it a copy-paste time. Add tests by
 pressing `Add test` button. Provide a test name (omit "test" at the beginning),
 error message and the test's code itself.
 Press `Create test` button when ready.
 
-![](.lesson/assets/repl-configure-6.png)
+![](.lesson/assets/replit/repl-configure-6.png)
 
 ## Providing a solution for students
 
 On the repls overview page, press "three-dots" button on a repl and select
 `Create solution` option.
 
-![](.lesson/assets/repl-create-solution-1.png)
+![](.lesson/assets/replit/repl-create-solution-1.png)
 
 This will create a new repl, there you may provide the solution. Once you're
 done - press `Create/Update solution` button in the top-right corner. Set up
 when the solution is available for the students.
 
-![](.lesson/assets/repl-create-solution-2.png)
+![](.lesson/assets/replit/repl-create-solution-2.png)
 
 ## Publish the assignment
 
 When the assignment is ready, simply check `Published`. Alternatively, you may
 press `Publish project` button in the top-right corner of the Repl page.
 
-![](.lesson/assets/repl-publish.png)
+![](.lesson/assets/replit/repl-publish.png)
 
 `Published` flag is used to track assignment that are ready.
 
