@@ -41,6 +41,8 @@ Provide branch name pattern and check following options:
 This will protect the default branch from committing directly into it.
 You may apply other protection rules, in case of need.
 
+Create a branch protection rule.
+
 ## Materials within this repo
 
 There are few major files here.
