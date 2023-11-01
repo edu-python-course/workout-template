@@ -19,6 +19,28 @@ Provide a valid meaningful repo name and add  its description.
 There is no need to clone branches except `master`. Default branch is always at
 the most stable version.
 
+### Protect master branch
+
+It's important not to work within the default branch. So, ensure noone can
+commit directly into `master`. In **Settings** navigate to **Branches** under
+the **Code and automation** section. Press `Add branch protection rule` button.
+
+![](.lesson/assets/branch-protection-1.png)
+
+Provide branch name pattern and check following options:
+
+- **Require a pull request before merging**
+- **Require status checks to pass before merging**
+  - **Require branches to be up date before merging**
+- **Do not allow bypassing the above settings**
+
+![](.lesson/assets/branch-protection-2.png)
+![](.lesson/assets/branch-protection-3.png)
+![](.lesson/assets/branch-protection-4.png)
+
+This will protect the default branch from committing directly into it.
+You may apply other protection rules, in case of need.
+
 ## Getting started
 
 1. Create a new repository using the template
