@@ -1,6 +1,23 @@
 # Assignment: ASSIGNMENT NAME
 
-Assignment description goes here...
+This repository is compatible with [Replit](https://replit.com/).
+
+[//]: # (TODO: provide a short assignment overview)
+Assigment overview goes here... TBD
+
+## Getting started
+
+### Creating a new repository from template
+
+Press the `Use this template` green button at the top.
+
+![](./.lesson/assets/repo-from-template.png)
+
+This will lead you to the repository creation page.
+Provide a valid meaningful repo name and add  its description.
+
+There is no need to clone branches except `master`. Default branch is always at
+the most stable version.
 
 ## Getting started
 
