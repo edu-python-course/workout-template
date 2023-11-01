@@ -162,3 +162,33 @@ error message and the test's code itself.
 Press `Create test` button when ready.
 
 ![](.lesson/assets/repl-configure-6.png)
+
+## Providing a solution for students
+
+On the repls overview page, press "three-dots" button on a repl and select
+`Create solution` option.
+
+![](.lesson/assets/repl-create-solution-1.png)
+
+This will create a new repl, there you may provide the solution. Once you're
+done - press `Create/Update solution` button in the top-right corner. Set up
+when the solution is available for the students.
+
+![](.lesson/assets/repl-create-solution-2.png)
+
+## Publish the assignment
+
+When the assignment is ready, simply check `Published`. Alternatively, you may
+press `Publish project` button in the top-right corner of the Repl page.
+
+![](.lesson/assets/repl-publish.png)
+
+`Published` flag is used to track assignment that are ready.
+
+### Assignment pre-publish check list
+
+- [ ] Instructions are included to the repl
+- [ ] Tests are configured properly 
+- [ ] Check tests are failed for the assignment
+- [ ] Solution provided
+- [ ] Check tests are passing for the solution
