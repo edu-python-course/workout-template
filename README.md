@@ -142,3 +142,23 @@ git switch master
 ```
 
 The repl set up is complete at this point.
+
+### Add Replit project tests
+
+In **Tools** section press `Tests` button and choose a testing method,
+*Unit tests* will be suitable in most cases.
+
+![](.lesson/assets/repl-configure-4.png)
+
+First you need to set up unit tests. In a setup window add required imports.
+Also, you can provide `setUp` and `tearDown` methods within advanced setup
+section.
+
+![](.lesson/assets/repl-configure-5.png)
+
+After the `unittest` framework is set up, it a copy-paste time. Add tests by
+pressing `Add test` button. Provide a test name (omit "test" at the beginning),
+error message and the test's code itself.
+Press `Create test` button when ready.
+
+![](.lesson/assets/repl-configure-6.png)
