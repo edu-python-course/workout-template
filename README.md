@@ -94,11 +94,51 @@ Assignment follows TDD approach. This means all the tests should fail.
 Decorate your test cases with `unittest.expectedFailure`. Otherwise, it
 will be impossible to merge topic branch into `master.`
 
-[//]: # (TODO: assignment documents)
+## Add the assignment to Replit
 
-## Publication checklist
+There is no way to import GitHub repo as lesson project to Replit. So, it's
+a little bit tricky to connect the Replit project with a GitHub repository.
 
-- [ ] Provide assignment name (README and pyproject files).
-- [ ] Provide short assignment description (README and pyproject files).
-- [ ] Provide assignment instructions, you "assets" directory for static files.
-- [ ] Implement test cases within "tests" directory, use `unittest` framework.
+Navigate to EDU organization's team and press `Create project` button.
+
+![](.lesson/assets/replit-create-project-1.png)
+
+Provide all the information about the assignment.
+
+![](.lesson/assets/replit-create-project-2.png)
+
+There is an [assignments library](https://replit.com/@assignments-library)
+of current course available on Replit. For the assignments within this team,
+there is no need to set a **due date**. Assignments will be copied to other
+working teams from here.
+
+In the repl, first press `Add lesson contents` button. Replit does not remove
+it, until it hasn't been clicked. And this may be annoying to see it each time.
+After that open `Git` tab, by pressing the corresponding button inside
+**Tools** section.
+
+![](.lesson/assets/repl-configure-1.png)
+
+On `Git` tab **uncheck** "Create initial commit with all changes" option.
+The GitHub repo is the only source of any changes for the assignment. After
+that press `Initialize Git Repository`.
+
+![](.lesson/assets/repl-configure-2.png)
+
+On `Git` tab press `Reset All` button. Approve discard changes actions.
+
+![](.lesson/assets/repl-configure-3.png)
+
+In the **Tools** section press `Shell` button to access the shell.
+Add remote repository as common. Note, it maybe tricky to use SSH access.
+Any way, HTTP will be quite enough until you aren't going to use Replit for
+the assignment preparation works. After that `fetch` all the changes and
+switch to `master` branch.
+
+```shell
+git remote add origin <remote_repo_url>
+git fetch
+git switch master
+```
+
+The repl set up is complete at this point.
