@@ -14,7 +14,7 @@ Press the `Use this template` green button at the top.
 ![](./.lesson/assets/repo-from-template.png)
 
 This will lead you to the repository creation page.
-Provide a valid meaningful repo name and add  its description.
+Provide a valid meaningful repo name and add its description.
 
 There is no need to clone branches except `master`. Default branch is always at
 the most stable version.
@@ -31,7 +31,7 @@ Provide branch name pattern and check following options:
 
 - **Require a pull request before merging**
 - **Require status checks to pass before merging**
-  - **Require branches to be up date before merging**
+    - **Require branches to be up date before merging**
 - **Do not allow bypassing the above settings**
 
 ![](.lesson/assets/branch-protection-2.png)
@@ -51,29 +51,30 @@ There are few major files here.
   the assignment by students.
 - `tests` directory is the home of **all** tests provided for the assignment.
 - `.lesson` directory is the documentation source
-  - `.lesson/instructions.md` is the assignment instructions file visible for
-    all.
-  - `.lesson/lessonplan.md` is the private file, available only for
-    the assignment owners and/or admins.
+    - `.lesson/instructions.md` is the assignment instructions file visible for
+      all.
+    - `.lesson/lessonplan.md` is the private file, available only for
+      the assignment owners and/or admins.
 
 Other documents may be included into `.lesson` directory.
 Only `instructions.md` will be visible for the students.
 
 ## Getting started
 
-1. Create a new repository using the template
-2. Clone it to your local machine
-3. Create a new topic branch (!!!DO NOT WORK IN MASTER DIRECTLY!!!)
-4. Prepare the assignment instruction
-5. Provide the solution in a separated document
-6. Prepare a code boilerplate
-7. Add unit tests (use `unittest` framework only)
-8. Open a PR into master to merge assignment branch
+1. Clone your assignment repo to your local machine.
+2. Create a new topic branch (e.g. `feature/assignment`).
+3. Complete the assignment instructions. Provide a clear objective and usage
+   examples.
+4. Prepare the code boilerplate file (`main.py`).
+5. Add test cases (use `unittest` framework only).
 
 ### Make your boilerplate file invisible for Git
 
 When a boilerplate code is ready, you may want to implement the actual logic
-for the assignment. To make changes inside a file invisible for Git use:
+for the assignment. It's useful for running tests especially. However, you do
+not want to put the implementation to the assignment repository.
+
+To make changes inside a file invisible for Git use:
 
 ```shell
 git update-index --assume-unchanged <file>
@@ -85,13 +86,15 @@ To switch it back:
 git update-index --no-assume-unchanged <file>
 ```
 
+Always do this while working with non-boilerplate code inside `main.py`.
+
 ### Testing
 
 Assignment follows TDD approach. This means all the tests should fail.
-Decorate your test cases with `unittest.expectedFailure`.
+Decorate your test cases with `unittest.expectedFailure`. Otherwise, it
+will be impossible to merge topic branch into `master.`
 
 [//]: # (TODO: assignment documents)
-
 
 ## Publication checklist
 
