@@ -187,6 +187,8 @@ press `Publish project` button in the top-right corner of the Repl page.
 
 ### Assignment pre-publish check list
 
+- [ ] Assignment overview is provided
+- [ ] pyproject file is updated
 - [ ] Instructions are included to the repl
 - [ ] Tests are configured properly 
 - [ ] Check tests are failed for the assignment
