@@ -5,7 +5,23 @@ This repository is compatible with [Replit](https://replit.com/).
 [//]: # (TODO: provide a short assignment overview)
 Assigment overview goes here... TBD
 
-## Getting started
+## Materials within this repo
+
+There are few major files here.
+
+- `main.py` is the main code base file. It will be used to complete
+  the assignment by students.
+- `tests` directory is the home of **all** tests provided for the assignment.
+- `.lesson` directory is the documentation source
+    - `.lesson/instructions.md` is the assignment instructions file visible for
+      all.
+    - `.lesson/lessonplan.md` is the private file, available only for
+      the assignment owners and/or admins.
+
+Other documents may be included into `.lesson` directory.
+Only `instructions.md` will be visible for the students.
+
+## Set up assignment repository
 
 ### Creating a new repository from template
 
@@ -42,22 +58,6 @@ This will protect the default branch from committing directly into it.
 You may apply other protection rules, in case of need.
 
 Create a branch protection rule.
-
-## Materials within this repo
-
-There are few major files here.
-
-- `main.py` is the main code base file. It will be used to complete
-  the assignment by students.
-- `tests` directory is the home of **all** tests provided for the assignment.
-- `.lesson` directory is the documentation source
-    - `.lesson/instructions.md` is the assignment instructions file visible for
-      all.
-    - `.lesson/lessonplan.md` is the private file, available only for
-      the assignment owners and/or admins.
-
-Other documents may be included into `.lesson` directory.
-Only `instructions.md` will be visible for the students.
 
 ## Getting started
 
