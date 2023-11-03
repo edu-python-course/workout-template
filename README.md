@@ -16,7 +16,8 @@ There are few major files here.
     - `.lesson/instructions.md` is the assignment instructions file visible for
       all.
     - `.lesson/lessonplan.md` is the private file, available only for
-      the assignment owners and/or admins.
+      the assignment owners and/or admins. Do not add solution to this file.
+      Use it for notes for the assignment.
 
 Other documents may be included into `.lesson` directory.
 Only `instructions.md` will be visible for the students.
