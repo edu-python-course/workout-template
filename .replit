@@ -5,6 +5,7 @@ hidden = [
     ".pythonlibs",
     ".git",
     ".github",
+    ".gitignore",
     "README.md",
     "LICENSE",
     "crowdin.yml"
