@@ -131,7 +131,7 @@ On `Git` tab press `Reset All` button. Approve discard changes actions.
 ![](.lesson/assets/replit/repl-configure-3.png)
 
 In the **Tools** section press `Shell` button to access the shell.
-Add remote repository as common. Note, it maybe tricky to use SSH access.
+Add remote repository as common. Note, it may be tricky to use SSH access.
 Any way, HTTP will be quite enough until you aren't going to use Replit for
 the assignment preparation works. After that `fetch` all the changes and
 switch to `master` branch.
