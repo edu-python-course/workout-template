@@ -18,9 +18,11 @@ There are few major files here.
     - `.lesson/lessonplan.md` is the private file, available only for
       the assignment owners and/or admins. Do not add solution to this file.
       Use it for notes for the assignment.
+    - `.lesson/assets` is the home for all static files required by the docs.
 
 Other documents may be included into `.lesson` directory.
 Only `instructions.md` will be visible for the students.
+This repository stores its own **assets** within `.lesson` directory as well.
 
 ## Set up assignment repository
 
