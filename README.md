@@ -2,9 +2,6 @@
 
 This repository is compatible with [Replit](https://replit.com/).
 
-[//]: # (TODO: provide a short assignment overview)
-Assigment overview goes here... TBD
-
 ## Materials within this repo
 
 There are few major files here.
@@ -22,6 +19,7 @@ There are few major files here.
 
 Other documents may be included into `.lesson` directory.
 Only `instructions.md` will be visible for the students.
+
 This repository stores its own **assets** within `.lesson` directory as well.
 
 ## Set up assignment repository
@@ -190,7 +188,11 @@ press `Publish project` button in the top-right corner of the Repl page.
 
 ### Assignment pre-publish check list
 
-- [ ] Assignment overview is provided
+- [ ] Instructions are included to the repl
+- [ ] Tests are configured properly 
+- [ ] Check tests are failed for the assignment
+- [ ] Solution provided
+- [ ] Check tests are passing for the solution
 - [ ] pyproject file is updated
 - [ ] Instructions are included to the repl
 - [ ] Tests are configured properly 
