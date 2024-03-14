@@ -31,6 +31,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Pages
+        uses: actions/configure-pages@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
 
@@ -46,22 +49,20 @@ jobs:
         run: |
           poetry run sphinx-build -b html -D language=${{ matrix.language }} docs public/${{ matrix.language }}
 
-  deploy:
-    needs: [ "build" ]
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Set up Pages
-        uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: "./public"
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs:
+      - build
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
