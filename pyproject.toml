@@ -1,13 +1,58 @@
 [tool.poetry]
-name = "todo-provide-assignment-name"
-version = "0.1.0"
-description = "todo: provide assignment description"
-authors = ["Author Name <authorl@email.com>"]
+name = "workout-template"
+version = "2024.3"
+description = "todo: provide workout description"
+license = "MIT"
+authors = [
+    "Author Name <authorl@email.com>"
+]
+# Maintainers list should be distinct from authors.
+# maintainers = ["Serhii Horodilov <sgorodil@gmail.com>"]
+
 readme = "README.md"
+repository = "https://github.com/edu-python-course/workout-template"
+
+keywords = [
+    "python",
+    "edu",
+    "education",
+    "workout",
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Education",
+]
+
+# The ``to`` parameter is designed to specify the relative destination
+# path where the package will be located upon installation.
+# This allows for greater control over the organization of packages
+# within your project’s structure.
+#
+# { include = "my_package", from = "lib", to = "target_package" }
+# e.g. { include = "workout", from = "src", to = "basics" }
+packages = [
+    { include = "workout", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.11"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+toml = "^0.10.2"
+myst-parser = "^2.0.0"
+sphinx-material = "^0.0.36"
+sphinx-intl = "^2.1.0"
+
+[tool.poetry.urls]
+# "Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
 
 [build-system]
 requires = ["poetry-core"]
