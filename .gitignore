@@ -18,3 +18,10 @@ __pycache__
 # temporary files storage
 /temp/
 /tmp/
+
+# documentation builds
+/public/
+/_build/
+/build/
+/_dist/
+/dist/
