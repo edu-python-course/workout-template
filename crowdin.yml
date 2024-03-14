@@ -1,3 +1,21 @@
+# Crowdin CLI configuration file
+
+# todo: provide the crowdin project identifier
+# project_id: "123456"
+
+base_path: /docs
+base_url: https://api.crowdin.com
+
+# vcs integration
+pull_request_title: "[i18n] New translations from Crowdin"
+pull_request_labels:
+  - crowdin
+  - i18n
+
+commit_message: "Fix: new translations %original_file_name% (%language%)"
+append_commit_message: false
+
+# translations
 files:
-  - source: /.lesson/instructions.md
-    translation: /i18n/%two_letters_code%/%original_file_name%
+  - source: /_locales/en/**/*.po
+    translation: /_locales/%two_letters_code%/**/%original_file_name%
