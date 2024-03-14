@@ -3,10 +3,6 @@
 
 This repository is compatible with [Replit](https://replit.com/).
 
-## Materials within this repo
-
-[//]: # (TODO: complete the section)
-
 ## Set up workout repository
 
 ### Creating a new repository from template
@@ -40,13 +36,13 @@ Create a branch protection rule.
 ## Getting started
 
 1. Clone your assignment repo to your local machine.
-2. Create a new topic branch (e.g. `feature/assignment`).
+2. Create a new topic branch (e.g. `feature/workout`).
 3. Complete the assignment instructions. Provide a clear objective and usage
    examples.
 4. Prepare the code boilerplate modules.
-5. Add test cases (use `unittest` framework only).
+5. Add test cases (`unittest` framework preferably).
 
-### Make your boilerplate file invisible for Git
+### Make your boilerplate modules invisible for Git
 
 When a boilerplate code is ready, you may want to implement the actual logic
 for the assignment. It's useful for running tests especially. However, you do
@@ -66,9 +62,7 @@ git update-index --no-assume-unchanged <file>
 
 ### Testing
 
-Assignment follows TDD approach. This means all the tests should fail.
-Decorate your test cases with `unittest.expectedFailure`. Otherwise, it
-will be impossible to merge topic branch into `master.`
+Assignments follow TDD approach. This means all the tests should fail.
 
 ## Add the workout to Replit
 
@@ -87,23 +81,3 @@ After the `unittest` framework is set up, it a copy-paste time. Add tests by
 pressing `Add test` button. Provide a test name (omit "test" at the beginning),
 error message and the test's code itself.
 Press `Create test` button when ready.
-
-## Providing a solution for students
-
-[//]: # (TODO: complete or remove the section)
-
-### Assignment pre-publish check list
-
-[//]: # (TODO: move this section to the CONTRIBUTING file)
-
-- [ ] Instructions are included to the repl
-- [ ] Tests are configured properly 
-- [ ] Check tests are failed for the assignment
-- [ ] Solution provided
-- [ ] Check tests are passing for the solution
-- [ ] pyproject file is updated
-- [ ] Instructions are included to the repl
-- [ ] Tests are configured properly 
-- [ ] Check tests are failed for the assignment
-- [ ] Solution provided
-- [ ] Check tests are passing for the solution
