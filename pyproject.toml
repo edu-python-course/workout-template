@@ -49,6 +49,7 @@ sphinx = "^7.2.6"
 toml = "^0.10.2"
 myst-parser = "^2.0.0"
 sphinx-material = "^0.0.36"
+sphinx-intl = "^2.1.0"
 
 [tool.poetry.urls]
 # "Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
