@@ -40,6 +40,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.11"
+# `git-python` package is required by ReplIt IDE
+git-python = "^1.0.3"
 
 [tool.poetry.group.docs]
 optional = true
