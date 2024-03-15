@@ -186,6 +186,34 @@ produce the same output.
 
 See also: https://www.sphinx-doc.org/en/master/usage/domains/python.html.
 
+## Import repository to ReplIt IDE
+
+ReplIt provide IDE for real-time collaboration. The template repository is
+suitable for it.
+
+Once you have workout ready to deploy in your default branch, go to ReplIt
+and import repository.
+
+You'll need to perform a quick set up, before you can use it.
+
+### Install dependencies
+
+For some reason, ReplIt IDE does not install project dependencies on load.
+So once the workout is loaded navigate to shell and install dependencies:
+
+```shell
+poetry install
+```
+
+After that you may use the workout in a collaborative environment.
+
+### Prepare unit tests
+
+In case you want to set unit tests runner at ReplIt, navigate to `Tests`.
+In **Setup** you will need to import required code from the workout.
+After that you can create or copy/paste tests, adding them one-by-one using
+**Add test** button.
+
 ## I18N
 
 ### Update translation sources
