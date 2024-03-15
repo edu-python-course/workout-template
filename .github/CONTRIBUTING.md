@@ -34,6 +34,14 @@ You may apply other protection rules, in case of need.
 
 Create a branch protection rule.
 
+### Enable GitHub Pages
+
+By default documentation will be published to GitHub Pages.
+This action requires Pages to be enabled for the repository.
+
+Navigate to repository **Settings**, and select **Pages** in the sidebar.
+Enable build and deploy with **GitHub Actions** source.
+
 ## Set up I18N Crowdin project
 
 It supposed you will use [Crowdin](https://crowdin.com) platform to manage
