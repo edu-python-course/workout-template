@@ -43,7 +43,7 @@ add_module_names = False
 
 # options for internationalization
 # ================================
-gettext_compact = False
+gettext_compact = True
 language = "en"
 locale_dirs = ["_locales"]
 gettext_allow_fuzzy_translations = True
