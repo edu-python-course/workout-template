@@ -25,3 +25,7 @@ __pycache__
 /build/
 /_dist/
 /dist/
+
+# translations
+*.pot
+*.mo

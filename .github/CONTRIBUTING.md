@@ -34,7 +34,7 @@ You may apply other protection rules, in case of need.
 
 Create a branch protection rule.
 
-### Set up I18N Crowdin project
+## Set up I18N Crowdin project
 
 It supposed you will use [Crowdin](https://crowdin.com) platform to manage
 translations. Otherwise, skip this section.
@@ -48,6 +48,26 @@ Update the *crowdin.yml* file by providing the project id. Set up the VCS
 integration to fetch the files for translation from the `master` branch.
 The complete instructions are available 
 [here](https://support.crowdin.com/github-integration/).
+
+The template repository comes with a minimal configuration file for the Crowdin
+platform. It helps to automate the translations' delivery to the main project.
+
+### Crowdin settings
+
+The template repository is set up to look for the translation sources within
+*docs/_locales/en* directory. **English (en)** locale is considered the default
+one for the project.
+
+This behavior can be changed by updating `language` variable in *docs/conf.py*
+module and `source` in *crowdin.yml* config.
+
+See also: [update translation sources](#update-translation-sources).
+
+### Delivery the translations from Crowdin
+
+If the integration with VCS is set up, the Crowdin platform will commit to
+the translation branch. It'll also open a pull request to the source branch
+(e.g. `master`) to merge the translated content.
 
 ## Documentation
 
@@ -117,3 +137,19 @@ is **English (en)**. To build documentation in additional languages pass the
 additional information.
 
 ## I18N
+
+### Update translation sources
+
+This action will create translation files, or update existing ones.
+
+```shell
+poetry run sphinx-build -b gettext docs _build/gettext
+poetry run sphinx-intl --config docs/conf.py update -p _build/gettext -l en
+```
+
+> In case Crowdin project is configured using the crowdin.yml file from
+> the template - output locales will be handled by the translation platform.
+
+To generate other locales, use `-l` option with appropriate locale name.
+See locales list at 
+https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
