@@ -4,6 +4,21 @@
 This is a template for the Python course workout activities.
 This repository is compatible with [Replit](https://replit.com/) IDE.
 
+## Template description
+
+This template comes with pre-configured test runner and documentation builder.
+The workout sources root is *src/workout* directory. Any Python sources are
+supposed to be placed here. In case, you want to name the installed package
+something other than `workout` - adjust `tools.poetry.packages` property in
+*pyproject.toml* file.
+
+E.g.
+```toml
+[tool.poetry]
+packages = [{ include = "workout", from = "src", to = "dicts" }]
+```
+will install the workout package as `dicts`.
+
 ## Set up workout repository
 
 ### Creating a new repository from template
