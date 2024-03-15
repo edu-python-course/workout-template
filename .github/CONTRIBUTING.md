@@ -136,6 +136,56 @@ is **English (en)**. To build documentation in additional languages pass the
 `-D language=<locale>` option to the command run. Refer to [i18n](#i18n) for
 additional information.
 
+## Prepare boilerplate module(s)
+
+Source code lies in *src/workout* directory. Fill free to create as many
+modules as you need to provide challenges and/or boilerplate code for the
+workout.
+
+You may provide the challenge(s) description in the module docstring, as well
+as provide code definition.
+
+E.g.
+```python
+# src/workout/func.py
+"""
+Workout functions
+=================
+
+.. autofunction:: get_sum
+
+"""
+
+from typing import Tuple
+
+
+def get_sum(*numbers: Tuple[int, ...]) -> int:
+    """
+    Return a sum of given numbers
+    
+    """
+
+    return sum(numbers)
+```
+
+and its variant
+
+```python
+# src/workout/func.py
+"""
+Workout functions
+=================
+
+.. py:function:: get_sum(*numbers: Tuple[int, ...]) -> int
+    Return a sum of given numbers
+
+"""
+```
+
+produce the same output.
+
+See also: https://www.sphinx-doc.org/en/master/usage/domains/python.html.
+
 ## I18N
 
 ### Update translation sources
