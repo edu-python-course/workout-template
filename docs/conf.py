@@ -20,7 +20,7 @@ copyright_opt = "Python training course authors and contributors"
 
 # project information
 # ===================
-project = pyproject["tool"]["poetry"]["name"]
+project = pyproject["tool"]["poetry"]["name"].replace("-", " ").title()
 version = pyproject["tool"]["poetry"]["version"]
 project_copyright = f"{datetime.now().year}, {copyright_opt}"
 authors = " \\and ".join(pyproject["tool"]["poetry"]["authors"])
@@ -42,11 +42,13 @@ needs_sphinx = "4.0"
 add_module_names = False
 
 # options for internationalization
+# ================================
 gettext_compact = False
 language = "en"
 locale_dirs = ["_locales"]
 gettext_allow_fuzzy_translations = True
 
 # options for HTML output
+# =======================
 html_theme = "sphinx_material"
 html_favicon = "_static/favicon.ico"
