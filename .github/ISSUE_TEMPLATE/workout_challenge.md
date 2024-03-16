@@ -2,8 +2,8 @@
 name: Workout challenge
 about: Create a challenge proposal
 title: "[Challenge]"
-labels: ''
-assignees: ''
+labels: "challenge"
+assignees: ""
 
 ---
 
@@ -21,21 +21,19 @@ Briefly describe the idea behind the challenge.
 ```python
 ```
 
-## Test cases
+## Tests
 
 ```python
 import unittest
 
-from workout.module import ...
+# TODO: import members from workout
 
 
 class Test(unittest.TestCase):
-    def test_something(self):
-        self.assertTrue(False)
+    ...
 ```
 
-### Test something
+### Test cases (methods)
 
-```python
-self.assertTrue(False)
-```
+Provide test case bodies (w/o) definition.
+E.g.
