@@ -36,4 +36,3 @@ class Test(unittest.TestCase):
 ### Test cases (methods)
 
 Provide test case bodies (w/o) definition.
-E.g.
