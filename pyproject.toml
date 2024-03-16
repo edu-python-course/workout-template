@@ -4,7 +4,7 @@ version = "2024.3"
 description = "todo: provide workout description"
 license = "MIT"
 authors = [
-    "Author Name <authorl@email.com>"
+    "Serhii Horodilov <sgorodil@gmail.com>"
 ]
 # Maintainers list should be distinct from authors.
 # maintainers = ["Serhii Horodilov <sgorodil@gmail.com>"]
@@ -43,6 +43,7 @@ python = ">=3.10.0,<3.11"
 # `git-python` package is required by ReplIt IDE
 git-python = "^1.0.3"
 
+# install: ``poetry install --with docs``
 [tool.poetry.group.docs]
 optional = true
 
@@ -53,8 +54,16 @@ myst-parser = "^2.0.0"
 sphinx-material = "^0.0.36"
 sphinx-intl = "^2.1.0"
 
+# install: ``poetry install --with test``
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.4.4"
+
 [tool.poetry.urls]
-# "Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
+"Bug Tracker" = "https://github.com/edu-python-course/workout-template/issues/"
 
 [build-system]
 requires = ["poetry-core"]
