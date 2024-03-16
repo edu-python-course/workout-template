@@ -49,7 +49,7 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 sphinx = "^7.2.6"
-toml = "^0.10.2"
+tomli = "*"
 myst-parser = "^2.0.0"
 sphinx-material = "^0.0.36"
 sphinx-intl = "^2.1.0"
