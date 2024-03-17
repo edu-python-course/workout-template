@@ -7,14 +7,14 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import toml
+import tomli
 
 # set up
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR / "src"))
 
-with open(BASE_DIR / "pyproject.toml") as io_buff:
-    pyproject = toml.load(io_buff)
+with open(BASE_DIR / "pyproject.toml", "rb") as io_buff:
+    pyproject = tomli.load(io_buff)
 
 copyright_opt = "Python training course authors and contributors"
 
