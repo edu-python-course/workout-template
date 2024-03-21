@@ -7,6 +7,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# tomli package is included to the "docs" dependencies group
+# noinspection PyPackageRequirements
 import tomli
 
 # set up
@@ -31,6 +33,8 @@ master_doc = root_doc = "index"
 extensions = [
     "sphinx.ext.autodoc",
     "myst_parser",
+
+    "sphinx_immaterial",
 ]
 
 source_suffix = {
@@ -50,5 +54,20 @@ gettext_allow_fuzzy_translations = True
 
 # options for HTML output
 # =======================
-html_theme = "sphinx_material"
+html_theme = "sphinx_immaterial"
 html_favicon = "_static/favicon.ico"
+html_theme_options = {
+    # internationalization
+    "languages": [
+        {
+            "name": "English",
+            "link": "../en/",
+            "lang": "en",
+        },
+        {
+            "name": "Ukrainian",
+            "link": "../uk",
+            "lang": "uk",
+        },
+    ]
+}

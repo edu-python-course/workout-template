@@ -40,10 +40,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.11"
-# `git-python` package is required by ReplIt IDE
 git-python = "^1.0.3"
 
-# install: ``poetry install --with docs``
 [tool.poetry.group.docs]
 optional = true
 
@@ -51,10 +49,9 @@ optional = true
 sphinx = "^7.2.6"
 tomli = "*"
 myst-parser = "^2.0.0"
-sphinx-material = "^0.0.36"
 sphinx-intl = "^2.1.0"
+sphinx-immaterial = "^0.11.11"
 
-# install: ``poetry install --with test``
 [tool.poetry.group.test]
 optional = true
 
